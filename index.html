@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Antes do Clique: uma experiência interativa sobre golpes digitais, sinais de alerta e cuidados para navegar com mais segurança.">
+    <meta name="theme-color" content="#0F172A">
+    <meta property="og:title" content="Antes do Clique | Golpe ou Seguro?">
+    <meta property="og:description" content="Aprenda a identificar sinais de golpes digitais em três situações interativas.">
+    <title>Antes do Clique | Golpes digitais: como identificar e se proteger</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body id="topo">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#topo" aria-label="Antes do Clique — voltar ao início">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4L33 9V19C33 28 27.5 34 20 37C12.5 34 7 28 7 19V9L20 4Z" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/>
+                        <path d="M15.5 19.5L19 23L25.5 16.5" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <span class="brand-name">antes<span class="brand-accent">do</span>clique<span class="brand-dot">.</span></span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a href="#dinamica">A dinâmica</a>
+                <a href="#pesquisa">A pesquisa</a>
+                <a href="#protecao">Como se proteger</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="challenge-section" id="dinamica" aria-labelledby="challenge-title">
+            <div class="container">
+                <header class="challenge-intro">
+                    <span class="challenge-eyebrow">ANTES DO CLIQUE · DINÂMICA</span>
+                    <h1 id="challenge-title">Golpe <em>ou</em> seguro?</h1>
+                    <p>Leia três situações do dia a dia e escolha uma resposta. Você saberia identificar um golpe?</p>
+                </header>
+
+                <div class="quick-quiz" aria-label="Dinâmica Golpe ou Seguro">
+                    <div class="quiz-top">
+                        <span id="quiz-counter" aria-live="polite">Situação 1 de 3</span>
+                        <div class="quiz-steps" id="quiz-steps" aria-hidden="true">
+                            <span class="is-current"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="quiz-layout" id="quiz-layout">
+                        <div class="quiz-example" aria-label="Situação ilustrativa fictícia">
+                            <span class="quiz-label">EXEMPLO FICTÍCIO</span>
+                            <p class="quiz-context" id="quiz-context">Uma mensagem chega ao celular.</p>
+
+                            <div class="quiz-message">
+                                <strong id="quiz-sender">Central de Segurança</strong>
+                                <p id="quiz-text">Carregando situação...</p>
+                            </div>
+                        </div>
+
+                        <div class="quiz-answer-area">
+                            <h2 id="quiz-question" tabindex="-1">É golpe ou é seguro?</h2>
+                            <p class="quiz-instruction">Escolha uma opção:</p>
+
+                            <div class="quiz-options" role="group" aria-label="Escolha entre golpe ou seguro">
+                                <button type="button" class="quiz-option quiz-option-danger" data-quiz-answer="golpe">
+                                    É golpe
+                                </button>
+                                <button type="button" class="quiz-option quiz-option-safe" data-quiz-answer="seguro">
+                                    É seguro
+                                </button>
+                            </div>
+
+                            <div class="quiz-feedback" id="quiz-feedback" tabindex="-1" role="status" hidden></div>
+
+                            <button type="button" class="quiz-next" id="quiz-next" hidden>
+                                Próxima situação <span aria-hidden="true">→</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="quiz-finish" id="quiz-finish" tabindex="-1" hidden>
+                        <span class="quiz-label">DINÂMICA CONCLUÍDA</span>
+                        <h2 id="quiz-result">Você acertou 0 de 3.</h2>
+                        <p>Acertar é bom, mas o mais importante é criar o hábito de parar, desconfiar e confirmar.</p>
+                        <button class="quiz-restart" id="quiz-restart" type="button">Refazer dinâmica <span aria-hidden="true">↻</span></button>
+                    </div>
+
+                    <p class="quiz-footer">Para refletir: <strong>o que chamou sua atenção em cada situação?</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section section-spacing" id="pesquisa" aria-labelledby="research-title">
+            <div class="container">
+                <div class="section-label-row">
+                    <span class="eyebrow"><span class="tiny-square" aria-hidden="true"></span> 02 / ENTENDER O PROBLEMA</span>
+                    <span class="section-side-note">Pesquisa com 30 pessoas de 40+</span>
+                </div>
+                <div class="section-intro">
+                    <h2 id="research-title">Os números contam<br>uma <span class="highlight-underline">história real.</span></h2>
+                    <p>Antes da palestra, ouvimos 30 pessoas. As respostas mostram que as tentativas de golpe já fazem parte do cotidiano - e que reconhecer todas as estratégias ainda é um desafio.</p>
+                </div>
+
+                <div class="stat-highlights">
+                    <article class="stat-feature stat-feature-dark">
+                        <div class="stat-feature-top"><span>CONTATO COM O RISCO</span><span aria-hidden="true">↗</span></div>
+                        <p class="stat-big">76,7<span>%</span></p>
+                        <h3>receberam uma ligação ou mensagem suspeita.</h3>
+                        <p>23 de 30 participantes relataram esse contato.</p>
+                    </article>
+                    <article class="stat-feature stat-feature-light">
+                        <div class="stat-feature-top"><span>EXPERIÊNCIA VIVIDA</span><span aria-hidden="true">↗</span></div>
+                        <p class="stat-big">23,3<span>%</span></p>
+                        <h3>já foram vítimas de algum golpe digital.</h3>
+                        <p>7 de 30 pessoas disseram ter passado por isso.</p>
+                    </article>
+                    <article class="stat-feature stat-feature-yellow">
+                        <div class="stat-feature-top"><span>CONHECIMENTO DO RISCO</span><span aria-hidden="true">↗</span></div>
+                        <p class="stat-big">56,7<span>%</span></p>
+                        <h3>disseram conhecer golpes com links e páginas falsas.</h3>
+                        <p>17 de 30 participantes conhecem o termo phishing.</p>
+                    </article>
+                </div>
+
+                <div class="research-detail-grid">
+                    <div class="research-chart">
+                        <div class="chart-heading">
+                            <div>
+                                <span class="eyebrow">O QUE AS PESSOAS CONHECEM</span>
+                                <h3>Golpes mais reconhecidos</h3>
+                            </div>
+                            <span class="chart-caption">% dos 30 entrevistados</span>
+                        </div>
+                        <div class="bar-list" aria-label="Percentual de entrevistados que conhecem cada modalidade de golpe">
+                            <div class="bar-item">
+                                <div class="bar-label"><span>Falso funcionário do banco</span><strong>80%</strong></div>
+                                <div class="bar-track"><span style="--value: 80%;"></span></div>
+                                <span class="bar-note">24 de 30 pessoas</span>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar-label"><span>Falso parente no WhatsApp</span><strong>80%</strong></div>
+                                <div class="bar-track"><span style="--value: 80%;"></span></div>
+                                <span class="bar-note">24 de 30 pessoas</span>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar-label"><span>Prêmio ou sorteio falso</span><strong>60%</strong></div>
+                                <div class="bar-track"><span style="--value: 60%;"></span></div>
+                                <span class="bar-note">18 de 30 pessoas</span>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar-label"><span>Phishing (links e páginas falsas)</span><strong>56,7%</strong></div>
+                                <div class="bar-track"><span style="--value: 56.7%;"></span></div>
+                                <span class="bar-note">17 de 30 pessoas</span>
+                            </div>
+                        </div>
+                        <p class="chart-insight"><span aria-hidden="true">✳</span> Conhecer o nome de um golpe não é a mesma coisa que reconhecê-lo quando ele aparece.</p>
+                    </div>
+                    <aside class="research-aside" aria-label="Outras descobertas da pesquisa">
+                        <span class="eyebrow eyebrow-light">OUTRAS DESCOBERTAS</span>
+                        <h3>Há hábitos positivos.<br><em>E pontos de atenção.</em></h3>
+                        <div class="aside-stat"><strong>23 <small>/ 30</small></strong><p>disseram que <b>não clicariam</b> em links suspeitos; 5 talvez clicassem e 2 disseram que clicariam.</p></div>
+                        <div class="aside-stat"><strong>26 <small>/ 30</small></strong><p>têm alguém de confiança com quem conversar se suspeitarem de um golpe.</p></div>
+                        <div class="aside-stat"><strong>27 <small>/ 30</small></strong><p>sabem que bancos não solicitam senhas por telefone.</p></div>
+                    </aside>
+                </div>
+
+                <div class="research-footnote"><span aria-hidden="true">ⓘ</span><p><strong>Sobre a pesquisa:</strong> respostas de um questionário com 30 participantes de 40 anos ou mais. Os percentuais descrevem somente esse grupo e são baseados em respostas declaradas; não representam necessariamente toda a população.</p></div>
+            </div>
+        </section>
+
+        <section class="protection-section section-spacing" id="protecao" aria-labelledby="protection-title">
+            <div class="container">
+                <div class="section-label-row">
+                    <span class="eyebrow"><span class="tiny-square" aria-hidden="true"></span> 03 / TRANSFORMAR EM ATITUDE</span>
+                    <span class="section-side-note">Proteção começa com pequenas escolhas</span>
+                </div>
+
+                <div class="section-intro protection-intro">
+                    <h2 id="protection-title">Na dúvida,<br><span class="highlight-underline">não clique.</span> Confira.</h2>
+                    <p>Você não precisa entender tudo de tecnologia para se proteger. Algumas atitudes simples já ajudam a interromper muitas tentativas de golpe.</p>
+                </div>
+
+                <div class="principles-grid">
+                    <article class="principle-card">
+                        <span class="principle-number">01</span>
+                        <span class="principle-icon" aria-hidden="true">Ⅱ</span>
+                        <h3>Desacelere a decisão</h3>
+                        <p>Mensagens que exigem ação <strong>imediata</strong> tentam impedir você de pensar. Não resolva nada sob pressão.</p>
+                        <span class="principle-tag">Urgência é sinal de alerta</span>
+                    </article>
+                    <article class="principle-card">
+                        <span class="principle-number">02</span>
+                        <span class="principle-icon" aria-hidden="true">↗</span>
+                        <h3>Confirme por outro canal</h3>
+                        <p>Se alguém pedir dinheiro ou disser que é do banco, <strong>encerre o contato</strong> e procure a pessoa ou instituição por um número já conhecido.</p>
+                        <span class="principle-tag">Não confie só na foto ou no nome</span>
+                    </article>
+                    <article class="principle-card">
+                        <span class="principle-number">03</span>
+                        <span class="principle-icon" aria-hidden="true">✳</span>
+                        <h3>Guarde senhas e códigos</h3>
+                        <p>Não informe senhas, PINs ou códigos de verificação recebidos por SMS ou aplicativo. <strong>Nem para quem diz trabalhar no banco.</strong></p>
+                        <span class="principle-tag">Código de acesso é pessoal</span>
+                    </article>
+                    <article class="principle-card">
+                        <span class="principle-number">04</span>
+                        <span class="principle-icon" aria-hidden="true">⌕</span>
+                        <h3>Examine links e ofertas</h3>
+                        <p>Desconfie de endereços estranhos, prêmios inesperados e ofertas boas demais. <strong>Abra o site ou aplicativo oficial por conta própria.</strong></p>
+                        <span class="principle-tag">Aparência não prova autenticidade</span>
+                    </article>
+                    <article class="principle-card">
+                        <span class="principle-number">05</span>
+                        <span class="principle-icon" aria-hidden="true">◎</span>
+                        <h3>Reforce a segurança</h3>
+                        <p>Use senhas diferentes, ative a verificação em duas etapas e mantenha celular e aplicativos atualizados.</p>
+                        <span class="principle-tag">Prevenção no dia a dia</span>
+                    </article>
+                    <article class="principle-card principle-card-emphasis">
+                        <span class="principle-number">06</span>
+                        <span class="principle-icon" aria-hidden="true">♡</span>
+                        <h3>Peça ajuda sem receio</h3>
+                        <p>Na dúvida, converse com alguém de confiança. <strong>Ser alvo de uma tentativa de golpe não é motivo de vergonha.</strong></p>
+                        <span class="principle-tag">Converse antes de transferir</span>
+                    </article>
+                </div>
+
+                <div class="action-band" aria-labelledby="action-title">
+                    <div class="action-intro">
+                        <span class="eyebrow eyebrow-light">SE ACONTECEU COM VOCÊ</span>
+                        <h3 id="action-title">Caiu em um golpe?<br><em>Agir rápido faz diferença.</em></h3>
+                        <p>Você não precisa resolver tudo sozinho. Comece por estas ações:</p>
+                    </div>
+                    <ol class="action-steps">
+                        <li><span class="action-number">1</span><div><strong>Contate o banco imediatamente</strong><p>Use o aplicativo ou telefone oficial. Informe a fraude e conteste movimentações suspeitas. Se houve Pix, pergunte sobre o MED.</p></div></li>
+                        <li><span class="action-number">2</span><div><strong>Guarde as provas e registre ocorrência</strong><p>Salve mensagens, contatos, comprovantes e protocolos. Registre boletim de ocorrência.</p></div></li>
+                        <li><span class="action-number">3</span><div><strong>Proteja suas contas</strong><p>Em um aparelho confiável, altere senhas comprometidas e verifique a segurança dos seus acessos.</p></div></li>
+                    </ol>
+                    <p class="action-note">O MED é um mecanismo de análise e possível devolução em casos de fraude com Pix, mas não garante o ressarcimento.</p>
+                </div>
+
+                <div class="protection-reminder"><span aria-hidden="true">✳</span><p><strong>Lembre-se:</strong> até mensagens com logo, foto, nome conhecido ou português perfeito podem ser falsas. O mais importante é confirmar fora da conversa suspeita.</p></div>
+            </div>
+        </section>
+
+        <section class="closing-section" aria-labelledby="closing-title">
+            <div class="container closing-inner">
+                <span class="eyebrow eyebrow-light">O PRÓXIMO CLIQUE É UMA ESCOLHA</span>
+                <h2 id="closing-title">Pare. Observe.<br><em>Confirme.</em></h2>
+                <p>Na internet, desconfiar não é ter medo. É dar a si mesmo tempo para fazer uma escolha mais segura.</p>
+                <div class="closing-actions">
+                    <a class="button button-yellow" href="#topo">Voltar ao topo <span aria-hidden="true">↑</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="footer-brand" href="#topo">antes<span>do</span>clique<span class="brand-dot">.</span></a>
+            <p>Projeto educativo • Golpes Cibernéticos: Como Identificar, Desconfiar e se Proteger</p>
+            <span>Informação também é proteção.</span>
+        </div>
+    </footer>
+</body>
+</html>
