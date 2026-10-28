@@ -54,7 +54,7 @@ Não é necessário instalar bibliotecas ou dependências externas.
 
 ## Acessar o projeto
 
-**Site publicado:** [Insira aqui o link do GitHub Pages]
+**Site publicado:** https://devcassiomagno.github.io/antes-do-clique/
 
 ## Aviso
 
