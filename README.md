@@ -44,14 +44,6 @@ Os resultados orientaram a construção de três seções principais:
 
 O projeto utiliza situações fictícias inspiradas em modalidades comuns de fraude, como o falso funcionário de banco e o falso parente solicitando Pix.
 
-## Como executar
-
-1. Faça o download ou clone este repositório.
-2. Mantenha os arquivos `index.html`, `style.css` e `script.js` na estrutura original.
-3. Abra o arquivo `index.html` em um navegador.
-
-Não é necessário instalar bibliotecas ou dependências externas.
-
 ## Acessar o projeto
 
 **Site publicado:** https://devcassiomagno.github.io/antes-do-clique/
