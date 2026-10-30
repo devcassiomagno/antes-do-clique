@@ -33,6 +33,7 @@ html {
 }
 
 body {
+    padding-top: 80px;
     margin: 0;
     min-width: 320px;
     background: var(--white);
@@ -183,8 +184,11 @@ h4 {
 }
 
 .site-header {
-    position: relative;
-    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     background: var(--navy);
     color: var(--white);
     border-bottom: 1px solid rgb(255 255 255 / 13%);
@@ -193,15 +197,15 @@ h4 {
 .header-inner {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
-    min-height: 86px;
+    gap: 20px;
+    min-height: 80px;
 }
 
 .brand {
-    margin-top: 25px;
+    margin-top: 20px;
     display: inline-flex;
     align-items: center;
     gap: 7px;
