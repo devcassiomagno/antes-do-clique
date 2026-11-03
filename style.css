@@ -29,9 +29,11 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 body {
+    padding-top: 80px;
     margin: 0;
     min-width: 320px;
     background: var(--white);
